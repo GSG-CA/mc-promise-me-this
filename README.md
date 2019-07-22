@@ -96,11 +96,15 @@ Call your function from your terminal by typing:
 node challenge.js
 ```
 
+When you have refactored the myApiCall function, use it to make an api call to the pokeApi to find out about Pikachu. Use `.then` to console.log the result. 
+
 ## Challenge Two
-Nice work on your Promise! Now let's have a go at linking Promises. Your challenge is to:
-1. make an api call to the pokeApi to find out about Pikachu.
-2. write a function that returns a Promise to grab information about Pikachu's first `held_item`.
-3. link the two Promises together so that the second is called when the first is fulfilled.
+Nice work on your Promise! Now let's have a go at linking Promises. 
+
+1. In the information we got about pikachu we have a `held_items` array. Create a function that gets the `item.url` of the first item in the held_items array, and makes an api call to this url using your `myApiCall` promise function. 
+
+
+2. we now have two Promises (the one getting pikachu's info, and one getting info on Pikachu's first held_item). link the two Promises together so that the second is called when the first is fulfilled.
 
 ## Challenge Three
 Did you really finish that fast :dash: ? Okay, so now your challenge is to find out info on the 3 starter pokemon (Bulbasaur :leaves:, Charmander :fire: & Squirtle :sweat_drops: ) and print the return info. To do this you need to:
