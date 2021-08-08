@@ -55,7 +55,7 @@ const readAFile = (callback) => {
     if (err) callback(err)
     //here you do something if it works
     else callback(null, data)
-  }
+  })
 }
 
 //now lets call it
@@ -107,7 +107,7 @@ Nice work on your Promise! Now let's have a go at linking Promises.
 2. we now have two Promises (the one getting pikachu's info, and one getting info on Pikachu's first held_item). link the two Promises together so that the second is called when the first is fulfilled.
 
 ## Challenge Three
-Did you really finish that fast :dash: ? Okay, so now your challenge is to find out info on the 3 starter pokemon (Bulbasaur :leaves:, Charmander :fire: & Squirtle :sweat_drops: ) and print the return info. To do this you need to:
+Did you really finish that fast :dash: ? Okay, so now your challenge is to find out info on the 3 starter pokemon (bulbasaur :leaves:, charmander :fire: & squirtle :sweat_drops: ) and print the return info. To do this you need to:
 - Send off the 3 api calls at once
 - Only print when all thee have fulfilled.
 
